@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <clocale>
 #include <string>
 #include<istream>
@@ -17,12 +17,12 @@ struct Forvard
 int main()
 {
 
-    const int N = 3;
+    const int N = 2;
     Forvard group[N];
 
     for (int i = 0; i < N; i++)
     {
-        cout << "\nProfile [" << i+1 << "]" << endl;
+        cout << "\n............Profile..[" << i + 1 << "]........" << endl;
         cout << "\nSurname: ";
         cin.ignore(std::cin.rdbuf()->in_avail());
         cin.getline(group[i].Surname, 64);
@@ -41,7 +41,7 @@ int main()
     {
 
         cout << "\n" << endl;
-        cout << "Profile [" << i + 1 << "]" << endl;
+        cout << "\n...............DATA......................" << endl;
         cout << "\nSurname: " << group[i].Surname << endl;
         cout << "\nAmplua: " << group[i].Amplua << endl;
         cout << "\nAge: " << group[i].Age << endl;
@@ -53,10 +53,10 @@ int main()
     for (int i = 0; i < N; i++)
     {
         
-        if (group[i].Game < best)
+        if (group[i].Game < 5)
         {      
             best = i;
-         cout << "\nResult" << endl;
+            cout << "\n...............Result......................" << endl;
          cout << "\nSurname: " << group[best].Surname << endl;
          cout << "\nAmplua: " << group[best].Amplua << endl;
          cout << "\nAge: " << group[best].Age << endl;
@@ -65,7 +65,8 @@ int main()
          }
         else 
         {
-            cout <<"\nResult"<< "\nPlayer not found" << endl;
+            cout << "\n...............Result......................" << endl;
+            cout << "\nPlayer not found" << endl;
         }
 
     }
