@@ -17,7 +17,7 @@ struct Forvard
 int main()
 {
 
-    const int N = 1;
+    const int N = 3;
     Forvard group[N];
 
     for (int i = 0; i < N; i++)
